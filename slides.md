@@ -36,6 +36,8 @@ blockquote:after{
 
 ## ![bg left](https://raw.githubusercontent.com/CraftLR/workshop-git/main/src/main/resources/assets/logo.png)
 
+---
+
 ## ~$ whoami
 
 **Sébastien NEDJAR**
