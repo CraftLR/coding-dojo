@@ -1,10 +1,9 @@
 ---
-marp: true
+marp: false
 theme: gaia
 markdown.marp.enableHtml: true
 paginate: true
 ---
-
 
 <style>
 
@@ -32,9 +31,10 @@ blockquote:after{
 </style>
 
 <!-- _class: lead -->
+
 # La Rochelle Software Craftsmenship : Coding Dojo
-![bg left](https://raw.githubusercontent.com/CraftLR/workshop-git/main/src/main/resources/assets/logo.png)
----
+
+## ![bg left](https://raw.githubusercontent.com/CraftLR/workshop-git/main/src/main/resources/assets/logo.png)
 
 ## ~$ whoami
 
@@ -51,4 +51,3 @@ Arrivé au CESI depuis septembre 2022
 ![bg left:30%](https://raw.githubusercontent.com/nedseb/cafescientifique/main/moi.png)
 
 ---
-

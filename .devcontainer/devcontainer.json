@@ -1,0 +1,48 @@
+// For format details, see https://aka.ms/vscode-remote/devcontainer.json or this file's README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.117.1/containers/typescript-node-12
+{
+	"name": "Node.js & TypeScript + Marp",
+	"image": "mcr.microsoft.com/vscode/devcontainers/typescript-node:0-18",
+
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"vivaxy.vscode-conventional-commits",
+				"dbaeumer.vscode-eslint",
+				"ms-vscode.vscode-typescript-tslint-plugin",
+				"eamodio.gitlens",
+				"esbenp.prettier-vscode",
+				"editorconfig.editorconfig",
+				"kavod-io.vscode-jest-test-adapter",
+				"marp-team.marp-vscode"
+			],
+			// Set *default* container specific settings.json values on container create.
+			"settings": {
+				"terminal.integrated.profiles.linux": {
+					"zsh": {
+						"path": "zsh"
+					}
+				},
+				"terminal.integrated.defaultProfile.linux": "zsh",
+				"files.autoSave" : "onFocusChange",
+				"editor.formatOnSave": true,
+				"editor.formatOnType": true
+			}
+		}
+	},
+
+	"features": {
+		"ghcr.io/devcontainers-contrib/features/zsh-plugins:0": {}
+	},
+
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	"forwardPorts": [3000, 3001],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	"postStartCommand": "npm install -g @marp-team/marp-cli",
+	"postCreateCommand": "yarn install",
+
+	// Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
+	// "remoteUser": "node"
+}
